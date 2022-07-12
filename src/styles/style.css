@@ -17,13 +17,17 @@
     border: 1px solid black;
 }
 
+h1{
+    margin: 0.3rem;
+}
+
 .display {
     display: flex;
     justify-content: flex-end;
     border: 1px solid black;
     height: 3rem;
     width: 100%;
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem;
     padding: 1rem;
 }
 
@@ -35,6 +39,7 @@
     width: 80px;
     height: 80px;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .col {
