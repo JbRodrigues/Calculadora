@@ -13,33 +13,33 @@
     <div class="container">
         <h1>Calculadora</h1>
 
-        <div class="display">teste</div>
+        <div class="display" id="display"></div>
 
         <div class="col">
-            <div class="number" id="sete">7</div>
-            <div class="number"id="oito">8</div>
-            <div class="number"id="nove">9</div>
-            <div class="number"id="menos">-</div>
+            <div class="number" id="sete" onclick="listener(7)">7</div>
+            <div class="number" id="oito" onclick="listener(8)">8</div>
+            <div class="number" id="nove" onclick="listener(9)">9</div>
+            <div class="number" id="menos" onclick="listener()">-</div>
         </div>
 
         <div class="col">
-            <div class="number"id="quatro">4</div>
-            <div class="number"id="cinco">5</div>
-            <div class="number"id="seis">6</div>
-            <div class="number"id="mais">+</div>
+            <div class="number" id="quatro" onclick="listener(4)">4</div>
+            <div class="number" id="cinco" onclick="listener(5)">5</div>
+            <div class="number" id="seis" onclick="listener(6)">6</div>
+            <div class="number" id="mais" onclick="listener()">+</div>
         </div>
 
         <div class="col">
-            <div class="number"id="um">1</div>
-            <div class="number"id="dois">2</div>
-            <div class="number"id="tres">3</div>
-            <div class="number"id="divisao">/</div>
+            <div class="number" id="um" onclick="listener(1)">1</div>
+            <div class="number" id="dois" onclick="listener(2)">2</div>
+            <div class="number" id="tres" onclick="listener(3)">3</div>
+            <div class="number" id="divisao" onclick="listener(1)">/</div>
         </div>
 
         <div class="col">
-            <div class="number" id="zero">0</div>
-            <div class="vezes number"id="ponto">.</div>
-            <div class="number"id="igual">=</div>
+            <div class="number" id="zero" onclick="listener(0)">0</div>
+            <div class="vezes number" id="ponto" onclick="listener(1)">.</div>
+            <div class="number" id="igual" onclick="listener(1)">=</div>
 
         </div>
     </div>
