@@ -2,49 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Calculadora</title>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Calculadora</h1>
 
-        <div class="display" id="display" onload="digitou(event)"></div>
+    <table class="calculator">
+        <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
 
-        <div class="col">
-            <div class="number" id="sete" onclick="listener(7)">7</div>
-            <div class="number" id="oito" onclick="listener(8)">8</div>
-            <div class="number" id="nove" onclick="listener(9)">9</div>
-            <div class="number" id="menos" onclick="listener('-')">-</div>
-        </div>
 
-        <div class="col">
-            <div class="number" id="quatro" onclick="listener(4)">4</div>
-            <div class="number" id="cinco" onclick="listener(5)">5</div>
-            <div class="number" id="seis" onclick="listener(6)">6</div>
-            <div class="number" id="mais" onclick="listener('+')">+</div>
-        </div>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+        </tr>
+        <tr>
 
-        <div class="col">
-            <div class="number" id="um" onclick="listener(1)">1</div>
-            <div class="number" id="dois" onclick="listener(2)">2</div>
-            <div class="number" id="tres" onclick="listener(3)">3</div>
-            <div class="number" id="divisao" onclick="listener(1)">/</div>
-        </div>
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input type="button" value="/" onclick="display('/')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input type="button" value="-" onclick="display('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input type="button" value="+" onclick="display('+')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
 
-        <div class="col">
-            <div class="number" id="clear" onclick="clear()">CC</div>
-            <div class="number" id="zero" onclick="listener(0)">0</div>
-            <div class="vezes number" id="ponto" onclick="listener('.')">.</div>
-            <div class="number" id="igual" onclick="listener('=')">=</div>
-        </div>
+            <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+        </tr>
+    </table>
 
-    </div>
-    <script src="src/script/script.js"></script>
+    <script type="text/javascript" src="src/script/script.js"></script>
+
 </body>
+
 
 </html>
