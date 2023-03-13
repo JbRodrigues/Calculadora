@@ -13,9 +13,15 @@
         <tr>
             <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
 
-
-            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
         </tr>
+
+        <tr>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+            <td> <input type="button" value="%" onclick="display('%')" disabled /> </td>
+            <td> <input type="button" value="<-" onclick="erase()" disabled id="btn"/> </td>
+
+        </tr>
+
         <tr>
 
             <td> <input type="button" value="1" onclick="display('1')" /> </td>
@@ -40,7 +46,7 @@
             <td> <input type="button" value="0" onclick="display('0')" /> </td>
 
             <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
-            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+            <td> <input type="button" value="X" onclick="display('*')" /> </td>
         </tr>
     </table>
 

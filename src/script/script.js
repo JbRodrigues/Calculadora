@@ -7,6 +7,10 @@ function clearScreen() {
 function display(value) {
     document.getElementById("result").value += value;
 }
+/*
+function erase(value){
+    document.getElementById("result") -= value;
+}*/
 
 // This function evaluates the expression and returns result
 function calculate() {
